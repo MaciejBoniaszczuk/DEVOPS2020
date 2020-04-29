@@ -19,8 +19,9 @@ function App() {
 
          const result = await axios.get(request);
 
+
          ReactDOM.render(<p id={"wynik2"}></p>, document.getElementById("wynik"));
-         document.getElementById("wynik2").innerHTML = "Twoj wskaznik ROE: " + result.data;
+         document.getElementById("wynik2").innerHTML = "Twoj wskaznik ROE: " + result.data + " %"
      }
      else
          {

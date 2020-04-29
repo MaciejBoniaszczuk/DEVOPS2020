@@ -1,1 +1,1 @@
-# Kalkulator odsetek lokat bankowych
+# Kalkulator wskaźnika ROE

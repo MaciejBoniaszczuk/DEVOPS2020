@@ -51,7 +51,7 @@ app.get('/:k/:z', (req, resp) => {
             var roe = 0.0;
 
 
-            roe = ((zysk / kapital) * 100).toFixed(2) + "%";
+            roe = ((zysk / kapital) * 100).toFixed(2);
 
 
             var query_string = "INSERT INTO results (kapital, zysk, roe) " +
@@ -67,7 +67,6 @@ app.get('/:k/:z', (req, resp) => {
 
 
             resp.send(roe.toString().replace(".", ","));
-            console.log(roe);
         }
     });
 });
